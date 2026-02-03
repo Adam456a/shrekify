@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+br {
+    padding-bottom: 20ex;
+}
+
 body {
     font-family: var(--header-font);
     color: #fff;
@@ -228,4 +232,8 @@ body::before {
         padding: 10px 20px;
         font-size: 0.95rem;
     }
+}
+
+.download-options + .download-options {
+    margin-top: 40px; 
 }
