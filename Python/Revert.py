@@ -29,14 +29,21 @@ startup_dir = (
 startup_dir.mkdir(parents=True, exist_ok=True)
 
 startup_script = startup_dir / "main.pyw"
+startup_scriptt = startup_dir / "main.exe"
 
-# Delete only if it exists
+
 if startup_script.exists():
     startup_script.unlink()
-    print("Reverted")
+    print(".pyw Removed")
+else:
+    print(".pyw Dosent Exist")
+
+if startup_scriptt.exists():
+    startup_scriptt.unlink()
+    print(".exe Removed")
     time.sleep(3)
 else:
-    print("Dosent Exist")
+    print(".exe Dosent Exist")
     time.sleep(3)
 
 print("Done")
